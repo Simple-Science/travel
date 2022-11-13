@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive ecommerce website design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!----header--->
+	<header>
+		<a href="#" class="logo">Travel</a>
+
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#deals">Places</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+
+		<div class="header-icons">
+			
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<div class="sidebar close">
+		<div class="logo-details">
+		  <i class='bx bxs-plane-take-off'></i>
+		  <span class="logo_name">Travel</span>
+		</div>
+		<ul class="nav-links">
+		  <li>
+			<a href="#">
+			  <i class='bx bx-grid-alt' ></i>
+			  <span class="link_name">Dashboard</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="index.html">Dashboard</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-collection' ></i>
+				<span class="link_name">Category</span>
+			  </a>
+			  <i class='bx bxs-chevron-down arrow' ></i>
+			</div>
+			<ul class="sub-menu">
+				<li><a class="link_name" href="#">Category</a></li>
+				<li><a href="Johor Bahru.html">Johor Bahru</a></li>
+				<li><a href="Pahang.html">Pahang</a></li>
+				<li><a href="Terengganu.html">Terengganu</a></li>
+				<li><a href="Sabah & Sarawak.html">Sabah & Sarawak</a></li>
+				<li><a href="Kedah.html">Kedah</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-plug' ></i>
+				<span class="link_name">Download on Mobile</span>
+			  </a>
+			</div>
+			<ul class="sub-menu">
+			  <li><a class="link_name" href="#">Download on Mobile</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+			  <i class='bx bx-log-out'></i>
+			  <span class="link_name">Logout</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="parallax.html">Logout</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+				<i class='bx bx-info-circle'></i>
+			  <span class="link_name">More Coming Soon</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="#">More Coming Soon</a></li>
+			</ul>
+		  </li>
+		  <li>
+		<div class="profile-details">
+		  <div class="profile-content">
+			<!--<img src="image/profile.jpg" alt="profileImg">-->
+		  </div>
+		  <div class="name-job">
+			<div class="profile_name">More Coming</div>
+			<div class="job">Soon</div>
+		  </div>
+		  <i class='bx bx-info-circle' ></i>
+		</div>
+	  </li>
+	</ul>
+	  </div>
+	  let arrow = document.querySelectorAll(".arrow");
+	  for (var i = 0; i < arrow.length; i++) {
+		arrow[i].addEventListener("click", (e)=>{
+	   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+	   arrowParent.classList.toggle("showMenu");
+		});
+	  }
+	  let sidebar = document.querySelector(".sidebar");
+	  let sidebarBtn = document.querySelector(".bx-menu");
+	  console.log(sidebarBtn);
+	  sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+	  });
+	  </script>
+
+	<section class="home" id="home">
+        <div class="home-text">
+            <h1>Travel to <br><span>Alor Setar</span></h1>
+            <p>Scroll below to choose your destination</p>
+            <a href="#deals" class="btn">View Places</a>
+        </div>
+    </section>
+
+	
+	<!--background-->
+	<section class="new" id="deals">
+		<style>
+			body{
+		background-image: url(Alor\ Setar\ bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+			}
+		</style>
+		<div class="center-text">
+			<h2>Places in Alor Setar</h2>
+		</div>
+		<!--pictures & content-->
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.menaraalorsetar.com.my/en/">
+				<img src="Menara Alor Setar.jpg">
+				</a>
+				<h5>Menara Alor Setar</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298282-d12115372-Reviews-The_Big_Clock_Tower-Alor_Setar_Kota_Setar_District_Kedah.html">
+					<img src="The Big Clock.jpg">
+				</a>
+				<h5>The Big Clock</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298282-d8694758-Reviews-Kedah_Royal_Museum-Alor_Setar_Kota_Setar_District_Kedah.html">
+					<img src="kedah-royal-museum.jpg">
+				</a>
+				<h5>Kedah Royal Museum</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://theculturetrip.com/asia/malaysia/articles/how-to-spend-24-hours-in-alor-setar-malaysia/">
+					<img src="Alor Setar Chinatown.jpg">
+				</a>
+				<h5>Alor Setar Chinatown</h5>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298282-d3644932-Reviews-Kedah_Paddy_Museum-Alor_Setar_Kota_Setar_District_Kedah.htmld">
+					<img src="Kedah Paddy Museum.jpg">
+				</a>
+				<h5>Kedah Paddy Museum</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g811246-d12391644-Reviews-Mount_Baling-Baling_Baling_District_Kedah.html">
+					<img src="Baling Mountain.jpg">
+				</a>
+				<h5>Baling Mountain </h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.percutianbajet.com/kedah/baling/lata-bayu-baling">
+					<img src="Lata Bayu.jpg">
+				</a>
+				<h5>Lata Bayu</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298283-d14079488-Reviews-Eagle_Square-Langkawi_Langkawi_District_Kedah.html">
+					<img src="Eagle Square.jpg">
+				</a>
+				<h5>Eagle Square</h5>
+			</div>
+
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/AttractionProductReview-g298283-d12932155-Cable_Car_and_Oriental_Village_from_Langkawi-Langkawi_Langkawi_District_Kedah.html">
+					<img src="Langkawi Cable Car.jpeg">
+				</a>
+				<h5>Langkawi Cable Car</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298283-d2149863-Reviews-Island_Horses-Langkawi_Langkawi_District_Kedah.html">
+					<img src="Langkawi Horses.jpg">
+				</a>
+				<h5>Langkawi Horses Equestrian Centre</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298283-d1454088-Reviews-Telaga_Tujuh_Waterfalls-Langkawi_Langkawi_District_Kedah.html">
+					<img src="Telaga Tujuh Waterfall.jpg">
+				</a>
+				<h5>Telaga Tujuh Waterfall</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298283-d645103-Reviews-Crocodile_Adventureland_Langkawi-Langkawi_Langkawi_District_Kedah.html">
+					<img src="Crocodile Adventureland.jpg">
+				</a>
+				<h5>Crocodile Adventureland Langkawi</h5>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!----contact--->
+	<section class="contact" id="about">
+
+	</section>
+
+	<div class="last-text">
+		<p>Copyright © 2022 All rights reserved | Travel Team</p>
+	</div>
+
+	<!----scroll top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!----custom js link--->
+	<script src="script.js"></script>
+	
+</body>
+</html>
